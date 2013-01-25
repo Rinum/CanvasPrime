@@ -18,7 +18,9 @@ I use the framework for all things canvas. It's fantastic! :)
 Author
 ------
 Name: Mohammed M Ahmed
+
 Email: m@rinum.com
+
 Website: http://rinum.com
 
-* If you have used the framework, I would love to hear about your experience! *
+> If you have used the framework, I would love to hear about your experience! <
