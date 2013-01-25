@@ -23,4 +23,4 @@ Email: m@rinum.com
 
 Website: http://rinum.com
 
-> If you have used the framework, I would love to hear about your experience! <
+> If you have used the framework, I would love to hear about your experience!
