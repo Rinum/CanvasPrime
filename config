@@ -1,0 +1,5 @@
+#Default GitHub
+Host github.com
+	HostName github.com
+	User Rinum
+	IdentityFile ~/.ssh/id_rsa_rinum
