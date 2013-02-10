@@ -80,6 +80,38 @@ Prime.prototype.add_object = function(object){
 	return id;
 }
 
+Prime.prototype.remove_controller = function(id,callback){
+	var controller = this.controllers[id];
+	
+	if(typeof callback == 'undefined')
+		callback = controller.stop;
+	
+	if(controller){		
+		//remove controller
+		delete this.controllers[id];
+		
+		//run callback
+		if(callback)
+			callback();		
+	}
+}
+
+Prime.prototype.remove_object = function(id,callback){
+	var object = this.objects[id];
+	
+	if(typeof callback == 'undefined')
+		callback = object.destroy;
+	
+	if(object){		
+		//remove controller
+		delete this.objects[id];
+		
+		//run callback
+		if(callback)
+			callback();		
+	}
+}
+
 /*
  * Logic Class
  * Solely responsible for running logic functions attached to objects and players

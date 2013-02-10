@@ -1,8 +1,10 @@
 /*
  * Object Class
+ * Interactive stuff
+ * 
  */
 
-Prime.Object = function(parent){
+Prime.Object = function(parent,data){
 	this.parent = parent;
 	this.init();
 }
