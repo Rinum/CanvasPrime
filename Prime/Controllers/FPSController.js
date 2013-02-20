@@ -4,6 +4,9 @@ FPSController = function(parent){
 }
 
 FPSController.prototype.init = function(){
+	//Set controller viewport
+	this.viewport = this.parent.viewport;
+	
 	//Create FPS Object to display FPS on screen
 	this.fps_object = new FPS(this);
 	
