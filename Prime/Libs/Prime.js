@@ -6,12 +6,16 @@ Prime = function(data){
 	this.init();
 }
 
-Prime.prototype.init = function(){
+Prime.prototype.init = function(viewport){
 	//Time of init
 	this.init_time = new Date().getTime();
 	
 	//Get the viewport
-	this.viewport = document.getElementById('viewport');
+	if(typeof viewport == 'undefined'){
+		this.viewport = document.getElementById('viewport');
+	} else {
+		this.viewport = viewport;
+	}
 	
 	//Initialize objects container
 	this.object_id = 0;
@@ -145,7 +149,7 @@ Prime.Frame = function(parent){
 };
 
 Prime.Frame.prototype.init = function(){
-	this.viewport = document.getElementById('viewport');
+	this.viewport = this.parent.viewport;
 	this.dimensions = {
 		width: this.viewport.width,
 		height: this.viewport.height
