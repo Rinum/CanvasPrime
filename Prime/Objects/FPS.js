@@ -17,7 +17,7 @@ FPS.prototype.init = function(){
 	this.context = this.canvas.getContext('2d');
 	
 	//Place canvas
-	document.getElementById('viewport').appendChild(this.canvas);
+	this.controller.viewport.appendChild(this.canvas);
 }
 
 FPS.prototype.render = function(time){
